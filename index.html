@@ -1125,12 +1125,26 @@
   .tickshow-video-wrap {
     position: relative;
     margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .tickshow-video-wrap .tickshow-media {
     margin-bottom: 0;
     display: block;
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+
+  .project-content > .tickshow-video-wrap,
+  .project-content .tickshow-section-copy + .tickshow-video-wrap,
+  .project-content .tickshow-video-wrap > video.project-images.tickshow-media {
+    width: 100%;
+    max-width: 100%;
   }
 
   .tickshow-video-badge {
